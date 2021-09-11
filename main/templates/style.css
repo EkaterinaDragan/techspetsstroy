@@ -1,0 +1,255 @@
+/* Обычный */
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next Cyr'), url('../assets/fonts/avenirnextcyr-regular.woff2') format('woff2'), url('assets/fonts/avenirnextcyr-regular.woff') format('woff'), url('assets/fonts/avenirnextcyr-regular.ttf') format('ttf'), url('assets/fonts/avenirnextcyr-regular.eot') format('eot');
+}
+/* Жирный */
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Avenir Next Cyr'), url('../assets/fonts/avenirnextcyr-bold.woff2') format('woff2'), url('assets/fonts/avenirnextcyr-bold.woff') format('woff'), url('assets/fonts/avenirnextcyr-bold.ttf') format('ttf'), url('assets/fonts/avenirnextcyr-bold.eot') format('eot');
+}
+/* Обычный */
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro'), url('assets/fonts/MyriadPro-Regular.woff') format('woff'), url('assets/fonts/MyriadPro-Regular.ttf') format('ttf'), url('assets/fonts/MyriadPro-Regular.eot') format('eot');
+}
+/* лайт*/
+@font-face {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Avenir Next Cyr'), url('../assets/fonts/avenirnextcyr-light.woff2') format('woff2'), url('assets/fonts/avenirnextcyr-light.woff') format('woff'), url('assets/fonts/avenirnextcyr-light.ttf') format('ttf'), url('assets/fonts/avenirnextcyr-light.eot') format('eot');
+}
+/* Переменные start*/
+/* Переменные end*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/*header styles start*/
+.header-wrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.header__menu-pic {
+  padding-right: 50px;
+}
+.header__input {
+  margin-left: auto;
+}
+.header__input > a {
+  font-size: 12.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #60abff;
+}
+.header__input {
+  font-family: 'Myriad Pro';
+  border: 2px solid #5389c5;
+  border-radius: 5px;
+  padding: 14px 25px;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.header__input:hover {
+  box-shadow: 0 0 5px #5389c5;
+}
+.header__contact > span {
+  font-size: 22px;
+  text-align: right;
+  line-height: 1.3;
+}
+.header__contact {
+  flex-direction: column;
+  display: flex;
+  margin-left: 30px;
+  align-items: flex-end;
+}
+.header__contact-link > a {
+  margin-bottom: 30px;
+  text-align: right;
+  color: #60abff;
+  text-decoration: none;
+}
+.header__contact-link {
+  border-bottom: 1px solid #60abff;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-bottom: 30px;
+}
+.header__contact-link_bold {
+  font-weight: bold;
+}
+.header__nav {
+  position: relative;
+}
+.header__nav:hover .header__first-nav {
+  display: block;
+}
+.header__first-nav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 230px;
+  height: 280px;
+  background-color: white;
+  box-shadow: 0px 33px 54px 0px rgba(12, 20, 26, 0.34);
+}
+.header__second-nav {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 230px;
+  width: 230px;
+  height: 200px;
+  background-color: white;
+}
+.header__nav-list:hover .header__second-nav {
+  display: block;
+}
+.header__nav-list {
+  list-style-type: none;
+  font-size: 16px;
+  padding: 50px;
+}
+.header__nav-list > li {
+  padding: 5px;
+  line-height: 1.4;
+}
+/*header styles end*/
+/*offer styles start*/
+.offer {
+  background-image: url(../assets/images/offer.png);
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 119px;
+  margin-bottom: 50px;
+}
+.offer-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.offer__title {
+  max-width: 486px;
+  font-size: 36px;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+.offer__subtitle {
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.714;
+  color: #191919;
+  padding-bottom: 69px;
+}
+.offer__more {
+  padding-left: 30px;
+  background: url(../assets/images/shape.png) no-repeat;
+}
+.offer__more-link {
+  background-color: #5389c5;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+/*offer styles end*/
+.services__title {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #e8edf0;
+  margin-bottom: 30px;
+}
+.services__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+  grid-column-gap: 55px;
+}
+.services__card-pic {
+  margin-bottom: 30px;
+}
+.services__card-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  padding-right: 15px;
+}
+.services__card-desc-icon {
+  padding-right: 30px;
+}
+.services__card-desc-title {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services__card:hover {
+  color: #5389c5;
+  font-weight: bold;
+}
+.services__card:hover .services__card-pic {
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+.services__card-pic {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
