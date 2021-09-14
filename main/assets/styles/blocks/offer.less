@@ -1,0 +1,45 @@
+// main: ../style.less
+
+.offer{
+    &-wrapper{
+        background-image: url('@{src-img}offer.png');
+        min-height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 119px;
+    }
+    &__inner{
+        max-width: 940px;
+        margin: 0 auto;
+    }
+    &__title{
+        max-width: 486px;
+        font-size: 36px;
+        font-weight: bold;
+        padding-bottom: 40px;
+    }
+    &__subtitle{
+        max-width: 520px;
+        font-size: 14px;
+        line-height: 1.714;
+        color: rgb(25, 25, 25);
+        padding-bottom: 69px;
+        font-family: "Myriad Pro";
+    }
+    &__more{
+        padding-left: 30px;
+        background: url('@{src-img}shape.png') no-repeat;
+    
+        &-link{
+            background-color: @border_blue;
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 20px 30px;
+            border-radius: 0px 5px 5px 0px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    }
+}

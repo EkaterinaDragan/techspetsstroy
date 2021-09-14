@@ -1,0 +1,43 @@
+// main: ../style.less
+
+.services__title{
+    margin-top: 90px;
+}
+
+.services__cards{
+    .flexbox();
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.services__card{
+    &-pic{
+        margin-bottom: 30px;
+        filter: grayscale(100%);
+    }
+
+    &-desc{
+        .flexbox();
+        align-items: center;
+        max-width: 300px;
+        
+        &-icon{
+            padding-right: 30px;
+        }
+
+        &-title{
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    }
+    
+    &:hover .services__card-pic{
+        filter: grayscale(0%);
+    }
+
+    &:hover{
+        color: @border_blue;
+        font-weight: bold;
+    }
+
+}
