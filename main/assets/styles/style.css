@@ -23,7 +23,7 @@
   font-family: 'Avenir Next Cyr';
   font-style: normal;
   font-weight: bold;
-  src: local('Avenir Next Cyr'), url('..fonts/avenirnextcyr-bold.woff2') format('woff2'), url('../fonts/avenirnextcyr-bold.woff') format('woff'), url('../fonts/avenirnextcyr-bold.ttf') format('ttf'), url('../fonts/avenirnextcyr-bold.eot') format('eot');
+  src: local('Avenir Next Cyr'), url('../fonts/avenirnextcyr-bold.woff2') format('woff2'), url('../fonts/avenirnextcyr-bold.woff') format('woff'), url('../fonts/avenirnextcyr-bold.ttf') format('ttf'), url('../fonts/avenirnextcyr-bold.eot') format('eot');
 }
 @font-face {
   font-family: 'Myriad Pro';

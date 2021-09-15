@@ -397,12 +397,15 @@
 	<script>
 		var closes = document.getElementById('header__topmenu');
 
-		
+		if (document.documentElement.clientWidth <= 769) {
 		document.getElementById('header__nav-close').addEventListener("mouseover", function(){closes.style.display = "none", body.style.overflow = "visible";
 		this.addEventListener("mouseout", function(){closes.style.display = "none", body.style.overflow = "visible";}); });
 
 		document.getElementById('header__nav-pic').addEventListener("mouseover", function(){closes.style.display = "block", body.style.overflow = "hidden";
-		this.addEventListener("mouseout", function(){closes.style.display = "block", body.style.overflow = "hidden";}); });
+		this.addEventListener("mouseout", function(){closes.style.display = "block", body.style.overflow = "hidden";}); 
+		});
+
+	}
 
 
 
