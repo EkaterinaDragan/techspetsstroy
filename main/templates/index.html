@@ -10,17 +10,17 @@
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 </head>
-<body>
+<body id="body">
 	<header class="header">
 		<div class="wrapper">
 			<div class="header__inner">
 				<nav class="header__nav">
-					<img src="../assets/images/icon-menu.svg" class="header__nav-pic">
-					<div class="header__topmenu">
+					<img src="../assets/images/icon-menu.svg" class="header__nav-pic" id="header__nav-pic">
+					<div class="header__topmenu" id="header__topmenu">
 						<ul class="header__topmenu-list">
 							<li class="header__topmenu-list-item"><a href="#" class="header__nav-link"></a>О компании</a></li>
 							<li class="header__topmenu-list-item header__topmenu-with-submenu"><a href="" class="header__nav-link">Услуги</a> 
-								<div class="header__submenu">
+								<div class="header__submenu" >
 									<ul class="header__submenu-list">
 										<li class="header__submenu-list-item"><a href="#" class="header__nav-link">Проектирование</a></li>
 										<li class="header__submenu-list-item"><a href="#" class="header__nav-link"></a>Строительство</a></li>
@@ -32,6 +32,14 @@
 							<li class="header__topmenu-list-item"><a href="#" class="header__nav-link">Контакты</a></li>
 							<li class="header__topmenu-list-item"><a href="#" class="header__nav-link">Разрешительные документы</a></li>
 						</ul>
+					<div class="header__nav-close" id="header__nav-close">
+						<span class="header__nav-close-line">
+
+						</span>
+						<span class="header__nav-close-line">
+							
+						</span>
+					</div>
 					</div>
 				</nav>
 				<div class="header__logo">
@@ -314,8 +322,10 @@
           320: {
             slidesPerView: 1,
             spaceBetween: 10,
-			
-
+          },
+		  560: {
+            slidesPerView: 2,
+            spaceBetween: 30,
           },
           768: {
             slidesPerView: 3,
@@ -341,13 +351,17 @@
 			spaceBetween: 10,
 			centeredSlides:true,
 		},
+		560: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 40,
+			spaceBetween: 20,
 		},
 		1024: {
 			slidesPerView: 4,
-			spaceBetween: 30,
+			spaceBetween: 20,
 		},
 		},
 		});
@@ -365,9 +379,13 @@
 			spaceBetween: 10,
 			centeredSlides:true,
 		},
+		560: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
 		768: {
-			slidesPerView: 2,
-			spaceBetween: 40,
+			slidesPerView: 4,
+			spaceBetween: 20,
 		},
 		1024: {
 			slidesPerView: 6,
@@ -376,5 +394,18 @@
 		},
 		});
   	</script>
+	<script>
+		var closes = document.getElementById('header__topmenu');
+
+		
+		document.getElementById('header__nav-close').addEventListener("mouseover", function(){closes.style.display = "none", body.style.overflow = "visible";
+		this.addEventListener("mouseout", function(){closes.style.display = "none", body.style.overflow = "visible";}); });
+
+		document.getElementById('header__nav-pic').addEventListener("mouseover", function(){closes.style.display = "block", body.style.overflow = "hidden";
+		this.addEventListener("mouseout", function(){closes.style.display = "block", body.style.overflow = "hidden";}); });
+
+
+
+	</script>
 </body>
 </html>

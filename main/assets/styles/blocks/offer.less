@@ -8,10 +8,23 @@
         background-size: cover;
         background-position: center center;
         padding-top: 119px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @media screen and (max-width: 768px) {
+            padding-top: 0px;
+           } 
     }
     &__inner{
         max-width: 940px;
-        margin: 0 auto;
+        margin: auto;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            min-height: 600px;
+        } 
     }
     &__title{
         max-width: 486px;
@@ -28,8 +41,9 @@
         font-family: "Myriad Pro";
     }
     &__more{
-        padding-left: 30px;
-        background: url('@{src-img}shape.png') no-repeat;
+        padding-left: 55px;
+        background: url('@{src-img}shape.png') no-repeat  left;
+
     
         &-link{
             background-color: @border_blue;
